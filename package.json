@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "tailwindcss": "^2.2.4"
+  }
+}
