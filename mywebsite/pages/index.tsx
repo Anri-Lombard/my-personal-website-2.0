@@ -3,11 +3,12 @@ import Layout, { siteTitle } from '../components/Layout'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/Link'
 import Date from '../components/Date'
+import { GetStaticProps } from 'next'
 
 // Posts data
 import { getSortedPostsData } from '../lib/posts'
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async() => {
   const allPostsData = getSortedPostsData()
   return {
     props: {
@@ -17,14 +18,14 @@ export async function getStaticProps() {
 }
 
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPostsData }: {allPostsData: { date: string, title: string, id: string }[]}) {
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hi, I'm Anri</p>
+        <p>Hi, I am Anri</p>
         <p>If you are ithcing to delve into the wonderland yonder make and want to know about the creator
           , you could read about him <Link href="/about"><a>here</a></Link>
         </p>
