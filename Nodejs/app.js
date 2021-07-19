@@ -1,15 +1,15 @@
-const express = require('express')
+const https = require('https')
+const options = {
+  hostname: 'anrilombard.com',
+  port: 443,
+  path: '/',
+  method: 'GET'
+}
 
-const app = express()
+const req = https.request(options, res => {
+  console.log(`statusCode: ${res.statusCode}`)
 
-app.get('/', (req, res) => {
-  res.send('Hi!')
-})
-
-const server = app.listen(3000, () => console.log('Server ready'))
-
-process.on('SIGTERM', () => {
-  server.close(() => {
-    console.log('Process terminated')
+  res.on('data', d => {
+    process.stdout.write(d)
   })
 })
