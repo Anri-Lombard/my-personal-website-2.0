@@ -12,10 +12,12 @@ export default function about() {
                 </Head>
 
                 <div>
-                    <h1>Macro Compliance Tracker!</h1>
-                    <p>
-                        This app will help you ensure your macros are within a selected range to help you achieve your New Years Resolution!
-                    </p>
+                    <h1>About page!!!</h1>
+                    <section>This is about me with some animations as you scroll</section>
+                    <section>Values: Learn, focus, help, smile... In that order</section>
+                    <h3>Principle: Don't optimise for time, optimise for amount of attention
+                        and value.
+                    </h3>
                 </div>
             </div>
         </Layout>

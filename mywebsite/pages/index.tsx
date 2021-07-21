@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/Link'
 import Date from '../components/Date'
 import { GetStaticProps } from 'next'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Posts data
 import { getSortedPostsData } from '../lib/posts'
@@ -24,28 +25,36 @@ export default function Home({ allPostsData }: {allPostsData: { date: string, ti
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>Hi, I am Anri</p>
-        <p>If you are ithcing to delve into the wonderland yonder make and want to know about the creator
-          , you could read about him <Link href="/about"><a>here</a></Link>
-        </p>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
-      </section>
+      <body>
+        <section className="mt-5 mb-5">
+          <blockquote className="blockquote text-center">
+            <p classNamee="mb-0">
+              “Oh, you can’t help that,” said the Cat: “we’re all mad here. I’m mad. You’re mad.” 
+              “How do you know I’m mad?” said Alice. “You must be,” said the Cat, or you wouldn’t 
+              have come here.”
+
+            </p>
+            <footer className="blockquote-footer">
+              <cite title="Alice in Wonderland">
+                A famous book about a rabbit hole
+              </cite>
+            </footer>
+          </blockquote>
+
+        </section>
+        <section className="mt-5 text-center">
+          <h2>Welcome anyway, feel free to stay(animate changing word)</h2>
+
+        </section>
+        <section className="mt-5">
+          <p>
+            This is something coool I say about something interesting on why I built this
+            website and what I find curious, then there is an animated page you could remove
+            to see something more interesting
+          </p>
+
+        </section>
+      </body>
     </Layout>
   )
 }
