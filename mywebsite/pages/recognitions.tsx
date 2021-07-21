@@ -7,7 +7,6 @@ export default function about() {
             <div>
                 <Head>
                     <title>Recognitions</title>
-                <   link rel="icon" href="/favicon.ico" />
                 </Head>
 
                 <div>

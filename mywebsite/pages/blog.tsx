@@ -6,13 +6,11 @@ export default function projects() {
         <Layout>
             <div>
                 <Head>
-                    <title>Projects</title>
+                    <title>Blog</title>
                 </Head>
 
                 <div>
-                    <h1>Incorporate three.js project for them to use</h1>
-                    <p>List all projects on billboard</p>
-                    <p>Make it interactive and fun</p>
+                    <h1>These include research on statistics and development in compsci projects</h1>
                 </div>
             </div>
         </Layout>

@@ -1,8 +1,5 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/Layout'
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/Link'
-import Date from '../components/Date'
 import { GetStaticProps } from 'next'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -28,7 +25,7 @@ export default function Home({ allPostsData }: {allPostsData: { date: string, ti
       <body>
         <section className="mt-5 mb-5">
           <blockquote className="blockquote text-center">
-            <p classNamee="mb-0">
+            <p>
               “Oh, you can’t help that,” said the Cat: “we’re all mad here. I’m mad. You’re mad.” 
               “How do you know I’m mad?” said Alice. “You must be,” said the Cat, or you wouldn’t 
               have come here.”

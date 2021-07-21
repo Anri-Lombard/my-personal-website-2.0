@@ -1,30 +1,26 @@
-/* eslint-disable @next/next/no-sync-scripts */
 import {Navbar, Container, Nav} from 'react-bootstrap'
 import Link from 'next/link'
 
 export default function MyNavbar() {
     return (
         <>
-            <Navbar bg="primary" variant="dark">
-                <Container>
-                    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-                    <Nav className="me-auto">
-                        <Link href="/" passHref>
-                            <Nav.Link>Home</Nav.Link>
-                        </Link>
-                        <Link href="/projects" passHref>
-                            <Nav.Link>Projects</Nav.Link>
-                        </Link>
-                        <Link href="/recognitions" passHref>
-                            <Nav.Link>Recognitions</Nav.Link>
-                        </Link>
-                        <Link href="/about" passHref>
-                            <Nav.Link>About</Nav.Link>
-                        </Link>
-                    </Nav>
-                </Container>
-            </Navbar>
-            <script src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js" crossOrigin></script>
+        <div className="pure-menu pure-menu-horizontal">
+            <a href="#" className="pure-menu-heading pure-menu-link">Anri Lombard</a>
+            <ul className="pure-menu-list">
+                <li className="pure-menu-item">
+                    <a href="#" className="pure-menu-link">Projects</a>
+                </li>
+                <li className="pure-menu-item">
+                    <a href="#" className="pure-menu-link">Recognitions</a>
+                </li>
+                <li className="pure-menu-item">
+                    <a href="#" className="pure-menu-link">Blog</a>
+                </li>
+                <li className="pure-menu-item">
+                    <a href="#" className="pure-menu-link">About</a>
+                </li>
+            </ul>
+        </div>
         </>
     )
 }
