@@ -11,7 +11,7 @@ export const siteTitle = 'Anri\'s personal website'
 export default function Layout({children, home}: {children: React.ReactNode, home?: boolean}) {
 
     return (
-        <html className="container">
+        <html>
             <Head>
                 <link rel="shortcut icon" type="image/png" href="../public/favicon/apple-touch-icon.png" />
                 <title>Paradise</title>
@@ -21,12 +21,15 @@ export default function Layout({children, home}: {children: React.ReactNode, hom
                 {/* Pure CSS */}
                 <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossOrigin="anonymous"></link>
                 <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css"></link>
+
+                {/* Bootstrap  */}
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossOrigin="anonymous"></link>
             </Head>
 
             <body>
                 <MyNavbar />
-                <Container>{children}</Container>
-                <Container>
+                <div>{children}</div>
+                <div>
                     {!home && (
                         <div className="backToHome">
                             <Link href="/">
@@ -34,7 +37,9 @@ export default function Layout({children, home}: {children: React.ReactNode, hom
                             </Link>
                         </div>
                     )}
-                </Container>
+                </div>
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossOrigin="anonymous"></script>
             </body>
             
         </html>

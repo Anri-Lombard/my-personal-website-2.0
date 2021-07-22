@@ -1,0 +1,35 @@
+// BACKGROUND
+@keyframes color-change-5x {
+  0% {
+    background: #7C83FD;
+    background-position: 50% 0%;
+  }
+  25% {
+    background: #96BAFF;
+  }
+  50% {
+    background: #7DEDFF;
+  }
+  75% {
+    background: #88FFF7;
+  }
+  100% {
+    background: #E4F9F5;
+    background-position: 50% 100%;
+  }
+}
+
+// WORD-ANIMATION
+
+@keyframes change {
+  0% { content:"ipsum"; }
+  10% { content:"dolor"; }
+  20% { content:"sit"; }
+  30% { content:"amet"; }
+  40% { content:"consectetur"; }
+  50% { content: "adipisicing"; }
+  60% { content: "elit"; }
+  70% { content: "Hic"; }
+  80% { content: "atque"; }
+  90% { content: "fuga"; }
+}

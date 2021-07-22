@@ -23,7 +23,7 @@ export default function Home({ allPostsData }: {allPostsData: { date: string, ti
         <title>{siteTitle}</title>
       </Head>
       <body>
-        <section className="mt-5 mb-5">
+        <section className="section-1">
           <blockquote className="blockquote text-center">
             <p>
               “Oh, you can’t help that,” said the Cat: “we’re all mad here. I’m mad. You’re mad.” 
@@ -39,11 +39,11 @@ export default function Home({ allPostsData }: {allPostsData: { date: string, ti
           </blockquote>
 
         </section>
-        <section className="mt-5 text-center">
-          <h2>Welcome anyway, feel free to stay(animate changing word)</h2>
+        <section className="text-center section-2">
+          <h2>Welcome anyway, feel free to <span id="changing"></span></h2>
 
         </section>
-        <section className="mt-5">
+        <section className="section-3">
           <p>
             This is something coool I say about something interesting on why I built this
             website and what I find curious, then there is an animated page you could remove
