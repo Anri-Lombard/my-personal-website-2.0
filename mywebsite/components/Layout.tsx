@@ -28,7 +28,7 @@ export default function Layout({children, home}: {children: React.ReactNode, hom
 
             <body>
                 <MyNavbar />
-                <div>{children}</div>
+                <div id="main-content">{children}</div>
                 <div>
                     {!home && (
                         <div className="backToHome">
