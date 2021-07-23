@@ -5,6 +5,11 @@
     height: 100vh;
     padding: 2rem;
     color: #fff;
-    text-shadow: 2px 2px 2px rgba(black, 1);
+    text-shadow: 1px 1px 2px rgba(black, 0.6);
     font-size: 1.75rem;
+}
+
+@mixin changing_color_background() {
+    @include layout();
+    animation: color-change-5x 15s infinite;
 }

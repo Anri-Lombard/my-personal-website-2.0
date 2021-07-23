@@ -9,8 +9,10 @@ export default function MyNavbar() {
                     <Navbar.Brand href="#home">Navbar</Navbar.Brand>
                     <Nav className="me-auto">
                         <Nav.Link>
-                            <Link href="/">
+                            <Link className="button" href="/">
                                 Home
+                                <div className="button__horizontal"></div>
+                                <div className="button__vertical"></div>
                             </Link>
                         </Nav.Link>
                         <Nav.Link>
