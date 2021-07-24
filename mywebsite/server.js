@@ -18,6 +18,12 @@ app.prepare().then(() => {
       app.render(req, res, '/', query)
     } else if (pathname === '/about') {
       app.render(req, res, '/about', query)
+    }else if (pathname === '/projects') {
+      app.render(req, res, '/projects', query)
+    }else if (pathname === '/recognitions') {
+      app.render(req, res, '/recognitions', query)
+    }else if (pathname === '/blog') {
+      app.render(req, res, '/blog', query)
     } else {
       handle(req, res, parsedUrl)
     }

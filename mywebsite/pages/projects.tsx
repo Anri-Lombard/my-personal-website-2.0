@@ -9,7 +9,7 @@ export default function projects() {
                     <title>Projects</title>
                 </Head>
 
-                <div>
+                <div className="projects">
                     <h1>Incorporate three.js project for them to use</h1>
                     <p>List all projects on billboard</p>
                     <p>Make it interactive and fun</p>
