@@ -1,12 +1,13 @@
 import {Navbar, Container, Nav} from 'react-bootstrap'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function MyNavbar() {
     return (
         <>
             <Navbar className="navbar" variant="dark">
                 <Container>
-                    <Navbar.Brand href="/">Navbar</Navbar.Brand>
+                    <Navbar.Brand href="/">Anri's Paradise</Navbar.Brand>
                     <Nav className="me-auto">
                         <Nav.Link>
                             <Link href="/" passHref>
