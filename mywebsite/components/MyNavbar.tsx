@@ -5,14 +5,17 @@ import Image from 'next/image'
 export default function MyNavbar() {
     return (
         <>
-            <Navbar className="navbar" variant="dark">
+            <Navbar collapseOnSelect expand="sm" className="navbar" variant="dark">
                 <Container>
+                    <Navbar.Toggle />
+                    <Navbar.Collapse>
+
                     <Navbar.Brand href="/">Anri's Paradise</Navbar.Brand>
                     <Nav className="me-auto">
                         <Nav.Link>
                             <Link href="/" passHref>
                                 <div className="navbar--item">
-        
+                                    
                                     Home
 
                                 </div>
@@ -51,6 +54,7 @@ export default function MyNavbar() {
                             </Link>
                         </Nav.Link>
                     </Nav>
+                    </Navbar.Collapse>
                 </Container>
             </Navbar>
         </>

@@ -29,13 +29,12 @@
 
     &-3 {
         @include changing_color_background();
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         height: 100vh;
         color: $dim-text; 
 
         em {
-          color: white;
-          font-weight: 800;
+          @include bolden-word();
         }
 
         &-slider {
@@ -391,8 +390,69 @@
 	border-radius: 0;
 }
 
-footer {
-  padding: 3rem;
+.footer {
+  padding: 2rem 3rem 1rem 3rem;
   font-size: 1.5rem;
   font-weight: 900;
+  background-color: #262626;
+  display: flex;
+  justify-content: space-between;
 }
+
+.backToHome {
+  padding: 1rem 3rem 0 5rem;
+  background-color: #262626;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.foot-caption {
+  text-decoration: none;
+  color: white;
+}
+
+// ABOUT
+
+.about-me {
+  @include changing_color_background();
+  font-size: 1.2rem;
+  display: block;
+  padding: 7rem 5rem;
+  color: $dim-text;
+
+  &__section-1 {
+    width: 100%;
+  }
+
+  &__section-2 {
+    width: 100%;
+  }
+
+  em {
+    @include bolden-word();
+  }
+}
+
+// RECOGNITIONS
+.recognitions {
+  @include changing_color_background();
+  display: block;
+}
+
+* {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) { 
+  .about-me, .section-3{
+    height: 100%;
+  }
+  .footer {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+ }

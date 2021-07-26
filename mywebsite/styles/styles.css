@@ -391,7 +391,7 @@ body {
   font-size: 1.75rem;
   -webkit-animation: color-change-5x 15s infinite;
           animation: color-change-5x 15s infinite;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   height: 100vh;
   color: #DBE2EF;
 }
@@ -779,9 +779,107 @@ body {
   border-radius: 0;
 }
 
-footer {
-  padding: 3rem;
+.footer {
+  padding: 2rem 3rem 1rem 3rem;
   font-size: 1.5rem;
   font-weight: 900;
+  background-color: #262626;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.backToHome {
+  padding: 1rem 3rem 0 5rem;
+  background-color: #262626;
+}
+
+.backToHome a {
+  text-decoration: none;
+  color: white;
+}
+
+.foot-caption {
+  text-decoration: none;
+  color: white;
+}
+
+.about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  padding: 2rem;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  font-size: 1.75rem;
+  -webkit-animation: color-change-5x 15s infinite;
+          animation: color-change-5x 15s infinite;
+  font-size: 1.2rem;
+  display: block;
+  padding: 7rem 5rem;
+  color: #DBE2EF;
+}
+
+.about-me__section-1 {
+  width: 100%;
+}
+
+.about-me__section-2 {
+  width: 100%;
+}
+
+.about-me em {
+  color: white;
+  font-weight: 800;
+}
+
+.recognitions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  padding: 2rem;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  font-size: 1.75rem;
+  -webkit-animation: color-change-5x 15s infinite;
+          animation: color-change-5x 15s infinite;
+  display: block;
+}
+
+* {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .about-me, .section-3 {
+    height: 100%;
+  }
+  .footer {
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

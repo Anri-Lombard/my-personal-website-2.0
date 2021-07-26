@@ -9,7 +9,7 @@ export default function about() {
                     <title>Recognitions</title>
                 </Head>
 
-                <div>
+                <div className="recognitions">
                     <h1>Awards</h1>
                     <em>This is not an exhaustive list, but it surely is exhausting</em>
                     <p>2 buttons to increase and reduce the accordian</p>

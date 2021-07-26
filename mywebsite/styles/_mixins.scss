@@ -26,3 +26,8 @@
     height: $height;
     margin-top: 0;
 }
+
+@mixin bolden-word() {
+        color: white;
+        font-weight: 800;
+}
