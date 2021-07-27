@@ -843,6 +843,10 @@ body {
   font-weight: 800;
 }
 
+.about-me a {
+  color: pink;
+}
+
 .recognitions {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -861,6 +865,8 @@ body {
   -webkit-animation: color-change-5x 15s infinite;
           animation: color-change-5x 15s infinite;
   display: block;
+  color: black;
+  text-shadow: none;
 }
 
 * {

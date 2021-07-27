@@ -433,12 +433,17 @@
   em {
     @include bolden-word();
   }
+  a {
+    color: pink;
+  }
 }
 
 // RECOGNITIONS
 .recognitions {
   @include changing_color_background();
   display: block;
+  color: black;
+  text-shadow: none;
 }
 
 * {

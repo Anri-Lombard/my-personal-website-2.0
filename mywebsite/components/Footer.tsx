@@ -12,7 +12,7 @@ export default function Footer() {
           </ul>
         </div>
         <div >
-          <p className="foot-caption">Made with these 2 🤲  and <a href="http://nextjs.org">Next.js</a></p>
+          <p className="foot-caption">Made with these 2 🤲  and <a href="http://nextjs.org">Next.js</a> &copy; Anri 2021</p>
         </div>
       </footer>
     )
