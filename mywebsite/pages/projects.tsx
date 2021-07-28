@@ -1,5 +1,5 @@
-import Layout from '../components/Layout'
 import Head from 'next/head'
+import Layout from '../components/Layout'
 import Project from '../components/Project'
 
 export default function projects() {
@@ -7,54 +7,54 @@ export default function projects() {
         title: "Ticker",
         alt: "ticker - a morning habit application",
         image: "Ticker2.png",
-        description: "Ticker all the way",
+        description: "An app prototype to motivate good morning habits with a in-built timer and reward system with home-made character design",
     }
 
     const secondSiteObject = {
-        title: "Ticker",
-        alt: "ticker - a morning habit application",
-        image: "Ticker2.png",
-        description: "Ticker all the way",
+        title: "Second Personal Website",
+        alt: "second personal website",
+        image: "SecondSite.png",
+        description: "A second personal website built with vuejs and sass",
     }
 
     const rocketObject = {
-        title: "Ticker",
-        alt: "ticker - a morning habit application",
-        image: "Ticker2.png",
-        description: "Ticker all the way",
+        title: "Rocket",
+        alt: "rocket - a webGL game",
+        image: "Rocket.png",
+        description: "Rocket is a blacked-out space mission with the only objective of getting to the green landing pad",
     }
 
     const hulkSmashObject = {
-        title: "Ticker",
-        alt: "ticker - a morning habit application",
-        image: "Ticker2.png",
-        description: "Ticker all the way",
+        title: "Hulk Smash",
+        alt: "Hulk-Smash - a block breaker",
+        image: "HulkSmash.png",
+        description: "A classic block-breaker game with a Hulky twist",
     }
 
     const simonObject = {
-        title: "Ticker",
-        alt: "ticker - a morning habit application",
-        image: "Ticker2.png",
-        description: "Ticker all the way",
+        title: "Simon",
+        alt: "Simon - a memorizing game",
+        image: "Simon.png",
+        description: "The ol' memorizing game modernized with some javascript code",
     }
 
     const covidSlayerObject = {
-        title: "Ticker",
-        alt: "ticker - a morning habit application",
-        image: "Ticker2.png",
-        description: "Ticker all the way",
+        title: "Covid-slayer",
+        alt: "Covid-slayer: first javascript app",
+        image: "CovidSlayer.png",
+        description: "My very first javascript application built out of frustration of covid!",
     }
     const firstSiteObject = {
-        title: "Ticker",
-        alt: "ticker - a morning habit application",
-        image: "Ticker2.png",
-        description: "Ticker all the way",
+        title: "First Website",
+        alt: "My first website",
+        image: "FirstSite.png",
+        description: "The very first taste of what code could do at the start of 2021",
     }
-    const ucMeObject = {
-        title: "Ticker",
-        alt: "ticker - a morning habit application",
-        image: "Ticker2.png",
-        description: "Ticker all the way",
+    const drumKitObject = {
+        title: "Drum Kit",
+        alt: "Drum Kit - a simple music app",
+        image: "DrumKit.png",
+        description: "Another simple javascript app to make all your musical dreams come true",
     }
 
     return (
@@ -64,7 +64,7 @@ export default function projects() {
                 </Head>
 
                 <div className="projects">
-                    <div className="row row-cols-lg-2 row-cols-sm-1">
+                    <div className="row row-cols-1 row-cols-md-2">
                         <div className="col">
                             <Project project={tickerObject}/>
                         </div>
@@ -77,6 +77,9 @@ export default function projects() {
                         <div className="col">
                             <Project project={hulkSmashObject}/>
                         </div>
+                        <div className="col" >
+                            <Project project={drumKitObject}/>
+                        </div>
                         <div className="col">
                             <Project project={simonObject}/>
                         </div>
@@ -85,9 +88,6 @@ export default function projects() {
                         </div>
                         <div className="col">
                             <Project project={firstSiteObject}/>
-                        </div>
-                        <div className="col" >
-                            <Project project={ucMeObject}/>
                         </div>
                     </div>
                 </div>
