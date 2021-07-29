@@ -1,6 +1,5 @@
 import {Navbar, Container, Nav} from 'react-bootstrap'
 import Link from 'next/link'
-import Image from 'next/image'
 
 export default function MyNavbar() {
     return (
@@ -10,11 +9,11 @@ export default function MyNavbar() {
                     <Navbar.Toggle />
                     <Navbar.Collapse>
 
-                    <Navbar.Brand href="/">Anri's Paradise</Navbar.Brand>
+                    <Navbar.Brand href="/">Anri&apos;s Paradise</Navbar.Brand>
                     <Nav className="me-auto">
                         <Nav.Link>
                             <Link href="/" passHref>
-                                <div className="navbar--item">
+                                <div className="navbar--item navlink">
                                     
                                     Home
 
@@ -46,7 +45,7 @@ export default function MyNavbar() {
                             </Link>
                         </Nav.Link>
                         <Nav.Link>
-                            <Link href="/blog" passHref>
+                            <Link href="https://admitted-snowman-901.notion.site/Imagineering-10687ab71ff64856933f9321b034a5f4" passHref>
                                 <span className="navbar--item">
                                     Blog
 

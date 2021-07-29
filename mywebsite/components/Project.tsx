@@ -6,8 +6,10 @@ export default function Project({project}: {project: any}) {
     return (
         <div className="container project-card">
             <div className="row">
-                <div className="col">
-                    <Image height={150} width={200} src={imagePath} alt={project.alt} />
+                <div className="col project-image">
+                    <a href={project.link}>
+                        <Image height={150} width={200} src={imagePath} alt={project.alt} />
+                    </a>
                 </div>
                 <div className="col">
                     <h4>{project.title}</h4>

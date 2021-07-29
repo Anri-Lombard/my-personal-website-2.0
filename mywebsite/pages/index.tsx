@@ -36,7 +36,7 @@ export default function Home({ allPostsData }: {allPostsData: { date: string, ti
       <body>
         <section className="section-1">
           <blockquote className="blockquote text-center">
-            <span>
+            <span className="section-1-cat">
               <Image width={150} height={150} src='/images/alicecat.png' alt="Picture of Alice" />
             </span>
             <p>
@@ -92,9 +92,9 @@ export default function Home({ allPostsData }: {allPostsData: { date: string, ti
                   </label>
                 </div>
               </div>
-            </section>
+            </section >
             {
-              toggleSeriousness ?<div> <h2 style={{color: "white", textDecoration: "underline", textAlign: "center"}}>Why is this website designed like this:</h2><br /> <span>Harry Potter is a likeable lad, so much so that <em className="emphasise">my childhood was filled
+              toggleSeriousness ?<div className="section-3-paragraph"> <h2 className="section-3__heading">Why is this website designed like this?</h2><br /> <span>Harry Potter is a likeable lad, so much so that <em className="emphasise">my childhood was filled
               with animated dreams of flying a broom</em> and leaving socks for Dobbie
               to be free. Say, my mum did give a queer look every so often...  <br />
               <br />
@@ -109,10 +109,10 @@ export default function Home({ allPostsData }: {allPostsData: { date: string, ti
               to an aspiring Griffindore. <br />
               <br />
             </span> </div>: 
-            <div><h2 style={{color: "white", textDecoration: "underline", textAlign: "center"}}>Beware, if you are a geek there is trouble ahead!</h2> <br /><span>
+            <div className="section-3-paragraph"><h2 className="section-3__heading">Beware, if you are a geek there is trouble ahead!</h2> <br /><span>
 
               This site is filled with an <em className="emphasise"></em>obsessed nerd; it reeks of it with 
-              his diligently articulated and revised <em className="emphasise">blogs</em>, the <em className="emphasise">games </em>
+              his diligently articulated and revised <em className="emphasise">blogs</em>, the <em className="emphasise">games </em> <t />
               and simple sites filled with unwanted boyish curiosity, ugh... <br />
               <br />
               My own eyes saw it, how all this popped up and sprouted from 

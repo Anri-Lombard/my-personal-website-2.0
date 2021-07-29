@@ -3,9 +3,11 @@
 .emphasise {
   transition: all .2s ease-in-out;
   color: white;
-  display: inline;
+  display: inline-block;
 }
 .emphasise:hover{
+  display: flexx;
   color: #F08FC0;
-  transform: translateX(3px);
+  transform: translateY(3px);
+  animation: tada 1s;
 }
