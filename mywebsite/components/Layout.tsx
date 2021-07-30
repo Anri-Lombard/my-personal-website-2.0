@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import Head from 'next/head'
+import Link from 'next/link'
 import React from 'react'
 import MyNavbar from './MyNavbar'
 import {Container} from 'react-bootstrap'

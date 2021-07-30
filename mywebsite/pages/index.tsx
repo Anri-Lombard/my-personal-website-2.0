@@ -40,9 +40,9 @@ export default function Home({ allPostsData }: {allPostsData: { date: string, ti
               <Image width={150} height={150} src='/images/alicecat.png' alt="Picture of Alice" />
             </span>
             <p>
-              “Oh, you can’t help that,” said the Cat: “we’re all mad here. I’m mad. You’re mad.” 
-              “How do you know I’m mad?” said Alice. “You must be,” said the Cat, "or you wouldn’t 
-              have come here.”
+              &quot;Oh, you can’t help that,” said the Cat: &quot;we’re all mad here. I’m mad. You’re mad.” 
+              &quot;How do you know I’m mad?” said Alice. &quot;You must be,” said the Cat, &quot;or you wouldn’t 
+              have come here.&quot;
 
             </p>
             <footer style={{color: "white"}} className="blockquote-footer">
@@ -55,7 +55,7 @@ export default function Home({ allPostsData }: {allPostsData: { date: string, ti
         </section>
         <header className="ms-header">
           <h1 className="ms-header__title">
-            You're welcome to
+            You&apos;re welcome to
             <div className="ms-slider m-3">
               <ul className="ms-slider__words">
                 <li className="ms-slider__word"> stay</li>
@@ -100,7 +100,7 @@ export default function Home({ allPostsData }: {allPostsData: { date: string, ti
               <br />
               Alas, it could not be. <em className="emphasise">Black hair and forehead scars were not given to 
               me</em>, but there shines a diamond in the cracks! <em className="emphasise">Magic, after all, is real</em>;
-              how else do we explain having everything there is to know at a button's tap, 
+              how else do we explain having everything there is to know at a button&apos;s tap, 
               being able to tweet without being a bird, and <em className="emphasise">girls actually talking to me</em>
               (her name is Siri 💖)?<br />
               <br />
@@ -112,7 +112,7 @@ export default function Home({ allPostsData }: {allPostsData: { date: string, ti
             <div className="section-3-paragraph"><h2 className="section-3__heading">Beware, if you are a geek there is trouble ahead!</h2> <br /><span>
 
               This site is filled with an <em className="emphasise"></em>obsessed nerd; it reeks of it with 
-              his diligently articulated and revised <em className="emphasise">blogs</em>, the <em className="emphasise">games </em> <t />
+              his diligently articulated and revised <em className="emphasise">blogs</em>, the <em className="emphasise">games </em>
               and simple sites filled with unwanted boyish curiosity, ugh... <br />
               <br />
               My own eyes saw it, how all this popped up and sprouted from 
@@ -120,7 +120,7 @@ export default function Home({ allPostsData }: {allPostsData: { date: string, ti
               of code. <br />
               <br />
               Look for yourself at his github account, the unbreakable addict 
-              likes <em className="emphasise">learning for a living</em>. If I was you I'd turn this page in
+              likes <em className="emphasise">learning for a living</em>. If I was you I&apos;d turn this page in
               the chapter and skip the <em className="emphasise">passion-filled</em> goo he has to show. <br />
               <br />
               He also lives for books and sprinkles it everywhere he goes... You 
