@@ -44,14 +44,6 @@ export default function MyNavbar() {
                                 </span>
                             </Link>
                         </Nav.Link>
-                        <Nav.Link>
-                            <Link href="https://admitted-snowman-901.notion.site/Imagineering-10687ab71ff64856933f9321b034a5f4" passHref>
-                                <span className="navbar--item">
-                                    Blog
-
-                                </span>
-                            </Link>
-                        </Nav.Link>
                     </Nav>
                     </Navbar.Collapse>
                 </Container>
